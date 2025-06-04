@@ -1,0 +1,183 @@
+/* Animation d'entrée douce et fluide */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation d’arrière-plan en mouvement subtil */
+@keyframes backgroundFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Appliquer une animation à tout le site */
+body {
+  animation: fadeInUp 1s ease-out both;
+  background: linear-gradient(120deg, #f9f9fa, #f4f6f8);
+  background-size: 200% 200%;
+  animation: backgroundFlow 15s ease infinite;
+}
+
+/* Animation sur titres */
+h1, h2, h3 {
+  animation: fadeInUp 1.5s ease-out both;
+}
+
+/* Animation sur paragraphes */
+p {
+  animation: fadeInUp 2s ease-out both;
+}
+
+/* Animation sur les boutons et liens */
+a, button {
+  transition: all 0.3s ease;
+}
+
+a:hover, button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    perspective: 1000px;
+} 
+
+
+
+.product:hover {
+  transform: rotateY(10deg) rotateX(5deg);
+  box-shadow: 0 20px 30px rgba(250, 234, 234, 0.3);
+}
+
+header {
+    background-color: #060906;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('https://via.placeholder.com/1200x300?text=Football+Shop');
+    background-size: cover;
+    background-position: center;
+    color: rgb(14, 13, 13);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product {
+    background-color: rgb(240, 230, 230);
+    padding: 20px;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 2px 5px rgba(8, 8, 8, 0.1);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 4px;
+
+}
+.product img:hover {
+     transform: scale(1.1);
+}
+
+button {
+  
+ margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #e9c7c7;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, letter-spacing 0.3s ease, color 0.3s ease;
+
+}
+
+button:hover {
+    background-color: #bcc6bc;
+}
+
+footer {
+    background-color: #191515;br
+    color: rgb(252, 238, 238);
+    text-align: center;
+    padding: 20px;
+
+}
+
+.box {
+  width: 300px;
+  height: 200px;
+  background-color: #f9c922;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Mouvement quand la souris touche le cadre */
+.box:hover {
+  transform: translateY(-10px) rotateZ(1deg) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #f0eee4;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+/* Effet de mouvement quand la souris touche le bouton */
+button:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
